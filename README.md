@@ -1,12 +1,12 @@
 jBinder
 =======
 
-Repository for jBinder; a jQuery plugin to facilitate unobtrusive JavaScript event binding.
-
 About
 =====
 
-jBinder is a jQuery plugin that makes it easy to produce unobtrusive JavaScript making use of the HTML5 data attribute. Rather than having your JavaScript matching elements by id or by class name jBinder allows you to bind events by using the attribute data-jbinder-functions; therefore keeping your css free for what it is there for: styling. This also improves re-useability by having single functions with arguments specified in the elements themselves.
+jBinder is a jQuery plugin that makes it easy to use unobtrusive JavaScript using the HTML5 data attribute to allow DOM elements to specify the functions they should trigger.
+
+Rather than the traditional approach of having JavaScript matching elements by id or by class name jBinder allows events to be bound using the attribute data-jbinder-functions; therefore keeping the css free for what it is there for: styling. This also improves re-useability by having single functions with the arguments specified in the elements themselves.
 
 Using jBinder has two sides to it. The first of these is to register the functions that need to be bound to the DOM elements. Each function must be registered with jBinder by passing a function name and the function itself (see examples below for code). The second part of jBinder is the data-jBinder-functions attribute. Once functions are registered they can be run against an element, either immeidatly, on an event or both. By adding the attribute data-jbinder-functions to a DOM element you can specify the function to be run. With all functions registered and elements decorated with the appropriate attributes the DOM can be bound.
 
