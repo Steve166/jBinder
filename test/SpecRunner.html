@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.3.1/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.3.1/jasmine.css">
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine-html.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="../src/jBinder.min.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="spec/jBinderSpec.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var htmlReporter = new jasmine.HtmlReporter();
+
+      jasmineEnv.addReporter(htmlReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+    <div id="containerTemplate">
+        <div id="standardTemplate">
+            <div id="testDivTemplate" data-jBinder-functions="Func0"></div>
+            <div id="testDiv2Template" data-jBinder-functions="change.Func2"></div>
+            <div id="testDiv3Template" data-jBinder-functions="change.Func3,change.Func2"></div>
+            <div id="testDiv4Template" data-jBinder-functions="change.Func4,update.Func5"></div>
+            <div id="testDiv6Template" data-jBinder-functions="change.Func4,update.Func5" data-jBinder-Func4-args='{"arg":"hello"}' data-jBinder-Func5-args='{"arg":"goodbye"}'></div>
+        </div>
+        <div id="immediatesTemplate">
+            <div id="testDiv5Template" data-jBinder-functions="0.Func1,Func2,2.Func3"></div>
+            <div id="testDiv7Template" data-jBinder-functions="0.Func4,3.Func5"></div>
+        </div>
+    </div>
+    <div id="container">
+    </div>
+</body>
+</html>

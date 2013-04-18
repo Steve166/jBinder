@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="jBinder-1.0.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $.jBinder.registerFunction('helloWorld',function(args) {
+	    alert(args.message);
+	});
+
+	$(document).jBinder();
+});
+</script>
+</head>
+<body>
+<button data-jBinder-functions="click.helloWorld" data-jBinder-helloWorld-args='{"message":"Hello world!"}'>Say hello</button>
+</body>
+</html>
