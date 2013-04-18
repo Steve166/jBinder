@@ -1,0 +1,39 @@
+{
+   "name": "jbinder",
+   "title": "jQuery jBinder",
+   "description": "jQuery plugin to facilitate unobtrusive JavaScript event binding using HTML5 data attributes.",
+   "keywords": [
+       "unobtrusive",
+       "binding",
+	   "events"
+   ],
+   "version": "1.0.0",
+   "author": {
+       "name": "Steve Williams",
+       "url": "https://github.com/Steve166"
+   },
+   "maintainers": [
+       {
+           "name": "Steve Williams",
+           "email": "stephenwilliams166@gmail.com",
+           "url": "http://www.jBinder.info"
+       }
+   ],
+   "licenses": [
+       {
+           "type": "MIT",
+           "url": "https://github.com/Steve166/jBinder/MIT-LICENSE.txt"
+       }
+   ],
+   "repository": {
+           "type": "git",
+           "url": "https://github.com/Steve166/jBinder/jBinder.git"
+   },
+   "bugs": "https://github.com/Steve166/jBinder/issues",
+   "homepage": "https://github.com/Steve166/jBinder",
+   "docs": "github.com/Steve166/jBinder",
+   "download": "http://code.jquery.com/#jBinder",
+   "dependencies": {
+       "jquery": ">=1.9"
+   }
+}
