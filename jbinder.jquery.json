@@ -32,7 +32,7 @@
    "bugs": "https://github.com/Steve166/jBinder/issues",
    "homepage": "https://github.com/Steve166/jBinder",
    "docs": "github.com/Steve166/jBinder",
-   "download": "http://code.jquery.com/#jBinder",
+   "download": "https://github.com/Steve166/jBinder",
    "dependencies": {
        "jquery": ">=1.9"
    }
