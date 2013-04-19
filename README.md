@@ -10,6 +10,13 @@ Rather than the traditional approach of having JavaScript matching elements by i
 
 Using jBinder has two sides to it. The first of these is to register the functions that need to be bound to the DOM elements. Each function must be registered with jBinder by passing a function name and the function itself (see examples below for code). The second part of jBinder is the data-jBinder-functions attribute. Once functions are registered they can be run against an element, either immeidatly, on an event or both. By adding the attribute data-jbinder-functions to a DOM element you can specify the function to be run. With all functions registered and elements decorated with the appropriate attributes the DOM can be bound.
 
+
+Versions
+=====
+v1.0.2	Fixes to jquery package manifest only  
+v1.0.1	Fixes to jquery package manifest only  
+v1.0.0	Initial release of jBinder  
+
 Methods
 =======
 
